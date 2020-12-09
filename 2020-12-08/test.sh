@@ -24,3 +24,15 @@ then
     cat test/two | ./whichalien
     cat test/three | ./whichalien
 fi
+
+if [ $1 == "php" ]
+then
+    cat test/one | php whichalien.php
+    cat test/two | php whichalien.php
+    cat test/three | php whichalien.php
+fi
+
+# [*] "./test.sh java" took 2.6245 seconds to run
+# [*] "./test.sh python" took 0.159 seconds to run
+# [*] "./test.sh c" took 0.0196 seconds to run
+# [*] "./test.sh php" took 0.2367 seconds to run
