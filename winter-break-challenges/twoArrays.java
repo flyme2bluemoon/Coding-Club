@@ -19,6 +19,7 @@ public class twoArrays {
         for (int i = 0; i < array_one.length; i++) {
             if (array_one[i] * array_one[i] != array_two[i]) {
                 output = false;
+                break;
             }
         }
 
